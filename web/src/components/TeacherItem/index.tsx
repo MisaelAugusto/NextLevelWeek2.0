@@ -2,39 +2,60 @@ import React from 'react';
 
 import WhatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
+import api from '../../services/api';
+
 import './styles.css';
 
-const TeacherItem = () => {
+export interface Teacher {
+  name: string;
+  avatar: string;
+  whatsapp: string;
+  bio: string;
+  cost: number;
+  id: number;
+  subject: string;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+  function createNewConnection() {
+    api.post('connections', {
+      user_id: teacher.id
+    });
+  }
+
   return (
     <article className="teacher-item">
       <header>
-        <img
-          src="https://avatars3.githubusercontent.com/u/30798460?s=460&v=4"
-          alt="Misael Augusto"
-        />
+        <img src={teacher.avatar} alt={teacher.name} />
         <div>
-          <strong>Misael Augusto</strong>
-          <span>Programação</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
 
-      <p>
-        Apaixonado por programação e dar vida a aplicações.
-        <br />
-        <br />
-        Acredita que a tecnologia pode transformar a vida das pessoas sempre
-        para melhor.
-      </p>
+      <p>{teacher.bio}</p>
 
       <footer>
         <p>
           Preço/Hora
-          <strong>R$ 40,00</strong>
+          <strong>
+            R$
+            {teacher.cost}
+          </strong>
         </p>
-        <button type="button">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          onClick={createNewConnection}
+          href={`https://wa.me/${teacher.whatsapp}`}
+        >
           <img src={WhatsappIcon} alt="Whatsapp" />
           Entrar em contato
-        </button>
+        </a>
       </footer>
     </article>
   );
