@@ -5,15 +5,19 @@ import { useFocusEffect } from '@react-navigation/native';
 
 import AsyncStorage from '@react-native-community/async-storage';
 
+import {
+  TextInput,
+  BorderlessButton,
+  RectButton
+} from 'react-native-gesture-handler';
 import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../../components/TeacherItem';
-import { TextInput, BorderlessButton, RectButton } from 'react-native-gesture-handler';
 
 import api from '../../services/api';
 
 import styles from './styles';
 
-const TeacherList = () => {
+const TeacherList: React.FC = () => {
   const [teachers, setTeachers] = useState([]);
   const [favorites, setFavorites] = useState<number[]>([]);
 
@@ -28,9 +32,11 @@ const TeacherList = () => {
       if (response) {
         const favoritedTeachers = JSON.parse(response);
 
-        const favoritedTeachersIDs = favoritedTeachers.map((teacher: Teacher) => {
-          return (teacher.id);
-        });
+        const favoritedTeachersIDs = favoritedTeachers.map(
+          (teacher: Teacher) => {
+            return teacher.id;
+          }
+        );
 
         setFavorites(favoritedTeachersIDs);
       }
@@ -65,9 +71,9 @@ const TeacherList = () => {
     <View style={styles.container}>
       <PageHeader
         title="Proffys disponíveis"
-        headerRight={(
+        headerRight={() => (
           <BorderlessButton>
-            <Feather 
+            <Feather
               name="filter"
               size={20}
               color="#fff"
@@ -76,7 +82,7 @@ const TeacherList = () => {
           </BorderlessButton>
         )}
       >
-        { isFiltersVisible && (
+        {isFiltersVisible && (
           <View style={styles.searchForm}>
             <Text style={styles.label}>Matéria</Text>
             <TextInput
@@ -120,7 +126,7 @@ const TeacherList = () => {
           </View>
         )}
       </PageHeader>
-      
+
       <ScrollView
         style={styles.teacherList}
         contentContainerStyle={{
