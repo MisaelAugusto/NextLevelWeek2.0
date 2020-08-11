@@ -20,17 +20,15 @@
 
 <h3 align="center">WEB</h3>
 
-<a href="web_preview.mp4">
-  <img src="https://ik.imagekit.io/ocq8ayf2ug/web_home_6XbOgbqP5.png" />
-</a>
+<div align="center">
+  <img src="https://ik.imagekit.io/ocq8ayf2ug/web-proffy_IlONUJnly.gif" alt="Proffy web"/>
+</div>
 
 <h3 align="center">MOBILE</h3>
 
-<a href="">
-  <div align="center">
-    <img src="https://ik.imagekit.io/ocq8ayf2ug/mobile_home_Vv2MUMSal.png" width="360" height="640"/>
-  </div>
-</a>
+<div align="center">
+  <img src="https://ik.imagekit.io/ocq8ayf2ug/mobile-proffy_0LM5_SjZu.gif" alt="Proffy mobile"/>
+</div>
 
 <h2 id="technologies">💻️ Technologies</h2>
 <ul>
