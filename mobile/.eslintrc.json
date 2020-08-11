@@ -43,7 +43,9 @@
       ],
       "prettier/prettier": "error",
       "import/no-extraneous-dependencies": "off",
-      "react/jsx-one-expression-per-line": "off"
+      "react/jsx-one-expression-per-line": "off",
+      "camelcase": "off",
+      "react/style-prop-object": "off"
     },
     "settings": {
       "import/resolver": {

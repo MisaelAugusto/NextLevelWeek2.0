@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Image, Text, TouchableOpacity } from 'react-native';
+import { View, Image, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
 
@@ -12,11 +12,11 @@ import api from '../../services/api';
 
 import styles from './styles';
 
-const Landing = () => {
+const Landing: React.FC = () => {
   const [totalConnections, setTotalConnections] = useState(0);
 
   const { navigate } = useNavigation();
-  
+
   useEffect(() => {
     api.get('connections').then(response => {
       setTotalConnections(response.data.total);
@@ -24,10 +24,10 @@ const Landing = () => {
   }, []);
 
   function handleNavigateToGiveClassesPage() {
-    navigate("GiveClasses");
+    navigate('GiveClasses');
   }
   function handleNavigateToStudyPages() {
-    navigate("Study");
+    navigate('Study');
   }
 
   return (
@@ -39,7 +39,7 @@ const Landing = () => {
       </Text>
 
       <View style={styles.buttonsContainer}>
-        <RectButton 
+        <RectButton
           onPress={handleNavigateToStudyPages}
           style={[styles.button, styles.buttonPrimary]}
         >
@@ -48,16 +48,17 @@ const Landing = () => {
           <Text style={styles.buttonText}>Estudar</Text>
         </RectButton>
 
-        <RectButton 
-          style={[styles.button, styles.buttonSecondary]} 
-          onPress={handleNavigateToGiveClassesPage}>
+        <RectButton
+          style={[styles.button, styles.buttonSecondary]}
+          onPress={handleNavigateToGiveClassesPage}
+        >
           <Image source={GiveClassesIcon} />
 
           <Text style={styles.buttonText}>Ensinar</Text>
         </RectButton>
       </View>
       <Text style={styles.totalConnections}>
-        Total de {totalConnections} conexões já realizadas {' '}
+        Total de {totalConnections} conexões já realizadas{' '}
         <Image source={HeartIcon} />
       </Text>
     </View>

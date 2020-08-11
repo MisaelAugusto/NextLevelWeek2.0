@@ -2,12 +2,18 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 
-const { Navigator, Screen } = createBottomTabNavigator();
-
 import Favorites from '../pages/Favorites';
 import TeacherList from '../pages/TeacherList';
 
-const StudyTabs = () => {
+const { Navigator, Screen } = createBottomTabNavigator();
+
+interface TabBarProps {
+  color: string;
+  size: number;
+  focused: boolean;
+}
+
+const StudyTabs: React.FC = () => {
   return (
     <Navigator
       tabBarOptions={{
@@ -37,34 +43,34 @@ const StudyTabs = () => {
         activeTintColor: '#32264d'
       }}
     >
-      <Screen 
-        name="TeacherList" 
-        component={TeacherList} 
+      <Screen
+        name="TeacherList"
+        component={TeacherList}
         options={{
           tabBarLabel: 'Proffys',
-          tabBarIcon: ({ color, size, focused}) => {
+          tabBarIcon: ({ color, size, focused }: TabBarProps) => {
             return (
               <Ionicons
                 name="ios-easel"
                 size={size}
-                color={(focused) ? '#8257e5': color}
+                color={focused ? '#8257e5' : color}
               />
             );
           }
         }}
       />
 
-      <Screen 
-        name="Favorites" 
+      <Screen
+        name="Favorites"
         component={Favorites}
         options={{
           tabBarLabel: 'Favorites',
-          tabBarIcon: ({ color, size, focused }) => {
+          tabBarIcon: ({ color, size, focused }: TabBarProps) => {
             return (
               <Ionicons
                 name="ios-heart"
                 size={size}
-                color={(focused) ? '#8257e5': color}
+                color={focused ? '#8257e5' : color}
               />
             );
           }
