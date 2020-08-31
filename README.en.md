@@ -68,7 +68,17 @@
   yarn install
 ```
 
-<h3>3. Run the backend:</h3>
+<h3>3. Set database up:</h3>
+
+```
+  # go to backend directory
+  cd server
+
+  # run migrations
+  yarn knex migrate:latest
+```
+
+<h3>4. Run the backend:</h3>
 
 ```
   # go to backend directory
@@ -80,9 +90,9 @@
   # keep backend running in a different terminal tab
 ```
 
-<h3>4. Run the project:</h3>
+<h3>5. Run the project:</h3>
 
-<h4>4.1. Web</h4>
+<h4>5.1. Web</h4>
 
 ```
   # go to frontend directory
@@ -94,7 +104,7 @@
   # access http://localhost:3000 in your browser
 ```
 
-<h4>4.2. Mobile</h4>
+<h4>5.2. Mobile</h4>
 
 <h5>Note: To test the mobile app, you need to have the expo installed globally on your machine and the expo app on your mobile device.<h5>
 

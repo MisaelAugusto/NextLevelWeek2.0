@@ -69,7 +69,17 @@
   yarn install
 ```
 
-<h3>3. Execute o backend:</h3>
+<h3>3. Configure o banco de dados:</h3>
+
+```
+  # vá para o diretório do backend
+  cd server
+
+  # execute as migrations
+  yarn knex migrate:latest
+```
+
+<h3>4. Execute o backend:</h3>
 
 ```
   # vá para o diretório do backend
@@ -81,9 +91,9 @@
   # mantenha em execução em uma aba do terminal separada
 ```
 
-<h3>4. Execute o projeto:</h3>
+<h3>5. Execute o projeto:</h3>
 
-<h4>4.1. Web</h4>
+<h4>5.1. Web</h4>
 
 ```
   # vá para o diretório do frontend
@@ -95,7 +105,7 @@
   # acesse http://localhost:3000 no seu navegador
 ```
 
-<h4>4.2. Mobile</h4>
+<h4>5.2. Mobile</h4>
 
 <h5>Nota: Para testar o aplicativo mobile é necessário ter o expo instalado globalmente na sua máquina e o aplicativo expo no seu dispositivo móvel.<h5>
 
