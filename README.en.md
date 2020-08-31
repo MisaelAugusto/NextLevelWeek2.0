@@ -112,6 +112,9 @@
   # go to mobile directory
   cd mobile
 
+  # open the 'api.ts' file inside services folder and change
+  # the attribute 'baseURL' according to your network ip
+
   # start mobile app
   yarn start
 

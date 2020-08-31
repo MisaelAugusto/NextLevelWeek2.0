@@ -113,6 +113,9 @@
   # vá para o diretório do mobile
   cd mobile
 
+  # abra o arquivo 'api.ts' na pasta services e modifique o
+  # atributo 'baseURL' de acordo com o ip da sua rede
+
   # inicie o aplicativo
   yarn start
 
