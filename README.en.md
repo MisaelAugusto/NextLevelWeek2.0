@@ -45,17 +45,17 @@
 
 ```
   # if you use HTTPS
-  git clone https://github.com/MisaelAugusto/NextLevelWeek2.0.git
+  git clone https://github.com/MisaelAugusto/next-level-week-2.0.git
 
   # if you use SSH
-  git clone git@github.com:MisaelAugusto/NextLevelWeek2.0.git
+  git clone git@github.com:MisaelAugusto/next-level-week-2.0.git
 ```
 
 <h3>2. Install dependencies:</h3>
 
 ```
   # go to project directory
-  cd NextLevelWeek2.0
+  cd next-level-week-2.0
 
   # go to each project folder and install dependencies
   cd server
@@ -116,7 +116,7 @@
 <h3 id="contributing">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📊️ Contributing</h3>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-To contribute to the project in any way, it is only necessary to follow the instructions in the above section, make your changes and/or upgrades and send a pull request. I am open to all suggestions!</p>
+To contribute to the project in any way, it is necessary to fork the repository and follow the instructions in the section above, make your changes and / or updates and submit a pull request. I am open to all suggestions!</p>
 
 <h3 id="feedback-support">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬️ Feedback and Support</h3>
 <p>

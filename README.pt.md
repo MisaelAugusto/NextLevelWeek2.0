@@ -46,17 +46,17 @@
 
 ```
   # Se você usa HTTPS
-  git clone https://github.com/MisaelAugusto/NextLevelWeek2.0.git
+  git clone https://github.com/MisaelAugusto/next-level-week-2.0.git
 
   # Se você usa SSH
-  git clone git@github.com:MisaelAugusto/NextLevelWeek2.0.git
+  git clone git@github.com:MisaelAugusto/next-level-week-2.0.git
 ```
 
 <h3>2. Instale as dependências:</h3>
 
 ```
   # vá para o diretório do projeto
-  cd NextLevelWeek2.0
+  cd next-level-week-2.0
 
   # vá para cada pasta do projeto e instale as depedências
   cd server
@@ -116,7 +116,7 @@
 
 <h3 id="contributing">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📊️ Contribuição</h3>
 <p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para contribuir com o projeto de qualquer forma, é necessário apenas seguir as instruções na seção acima, fazer suas alterações e / ou atualizações e enviar um 'pull request'. Estou aberto a todas as sugestões!</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para contribuir com o projeto de qualquer forma, é necessário realizar um 'fork' do repositório e seguir as instruções da seção acima, fazer suas alterações e / ou atualizações e enviar um 'pull request'. Estou aberto a todas as sugestões!</p>
 
 <h3 id="feedback-support">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬️ Comentários e Suporte</h3>
 <p>
