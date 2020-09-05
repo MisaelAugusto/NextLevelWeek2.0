@@ -36,7 +36,7 @@
   <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Frontend: React</li></div>
   <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Backend: NodeJs</li></div>
   <li>📱️ Mobile app: React Native</li>
-  <li>💾️ Database: Knex e Sqlite3</li>
+  <li>💾️ Database: Knex and Sqlite3</li>
   <li>⌨️ Programming language: Typescript</li>
 </ul>
 
